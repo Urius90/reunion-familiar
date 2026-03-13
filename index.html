@@ -18,9 +18,9 @@
     --border: rgba(28,25,23,0.12);
     --border-hover: rgba(28,25,23,0.28);
   }
-
+ 
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
   body {
     font-family: 'DM Sans', sans-serif;
     background: var(--cream);
@@ -31,23 +31,23 @@
     justify-content: center;
     padding: 3rem 1rem 4rem;
   }
-
+ 
   .container {
     width: 100%;
     max-width: 560px;
     animation: fadeUp 0.6s ease both;
   }
-
+ 
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(16px); }
     to { opacity: 1; transform: translateY(0); }
   }
-
+ 
   .header {
     text-align: center;
     margin-bottom: 2.5rem;
   }
-
+ 
   .ornament {
     display: flex;
     align-items: center;
@@ -55,21 +55,21 @@
     gap: 10px;
     margin-bottom: 1.2rem;
   }
-
+ 
   .ornament-line {
     height: 1px;
     width: 48px;
     background: var(--gold);
     opacity: 0.6;
   }
-
+ 
   .ornament-diamond {
     width: 6px;
     height: 6px;
     background: var(--gold);
     transform: rotate(45deg);
   }
-
+ 
   .header h1 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 2.6rem;
@@ -79,21 +79,21 @@
     line-height: 1.1;
     margin-bottom: 0.5rem;
   }
-
+ 
   .header p {
     font-size: 0.85rem;
     color: var(--ink-light);
     letter-spacing: 0.08em;
     text-transform: uppercase;
   }
-
+ 
   .card {
     background: var(--warm-white);
     border: 1px solid var(--border);
     border-radius: 2px;
     padding: 2rem 2.25rem;
   }
-
+ 
   .section-label {
     font-size: 0.7rem;
     font-weight: 500;
@@ -104,26 +104,26 @@
     padding-bottom: 0.6rem;
     border-bottom: 1px solid var(--gold-light);
   }
-
+ 
   .form-section {
     margin-bottom: 1.75rem;
   }
-
+ 
   .row {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 14px;
   }
-
+ 
   .field {
     display: flex;
     flex-direction: column;
     gap: 5px;
     margin-bottom: 14px;
   }
-
+ 
   .field:last-child { margin-bottom: 0; }
-
+ 
   .field label {
     font-size: 0.75rem;
     font-weight: 500;
@@ -131,7 +131,7 @@
     text-transform: uppercase;
     color: var(--ink-muted);
   }
-
+ 
   .field input,
   .field select,
   .field textarea {
@@ -147,7 +147,7 @@
     width: 100%;
     -webkit-appearance: none;
   }
-
+ 
   .field select {
     cursor: pointer;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23A8A29E'/%3E%3C/svg%3E");
@@ -155,51 +155,51 @@
     background-position: right 4px center;
     padding-right: 20px;
   }
-
+ 
   .field input:focus,
   .field select:focus,
   .field textarea:focus {
     border-bottom-color: var(--gold);
   }
-
+ 
   .field input::placeholder,
   .field textarea::placeholder {
     color: var(--ink-light);
   }
-
+ 
   .field textarea {
     resize: none;
     min-height: 72px;
     line-height: 1.5;
   }
-
+ 
   .divider {
     height: 1px;
     background: var(--border);
     margin: 1.75rem 0;
   }
-
+ 
   .acomp-list {
     display: flex;
     flex-direction: column;
     gap: 8px;
     margin-bottom: 10px;
   }
-
+ 
   .acomp-row {
     display: flex;
     align-items: center;
     gap: 8px;
     animation: fadeUp 0.25s ease both;
   }
-
+ 
   .acomp-num {
     font-size: 0.7rem;
     color: var(--ink-light);
     min-width: 16px;
     text-align: right;
   }
-
+ 
   .acomp-row input {
     font-family: 'DM Sans', sans-serif;
     font-size: 0.9rem;
@@ -212,9 +212,9 @@
     flex: 1;
     transition: border-color 0.2s;
   }
-
+ 
   .acomp-row input:focus { border-bottom-color: var(--gold); }
-
+ 
   .acomp-row .remove-btn {
     background: none;
     border: none;
@@ -225,9 +225,9 @@
     padding: 2px;
     transition: color 0.15s;
   }
-
+ 
   .acomp-row .remove-btn:hover { color: #c0392b; }
-
+ 
   .add-btn {
     background: none;
     border: 1px dashed var(--border-hover);
@@ -243,13 +243,13 @@
     transition: all 0.2s;
     width: 100%;
   }
-
+ 
   .add-btn:hover {
     background: var(--gold-light);
     border-color: var(--gold);
     color: var(--gold);
   }
-
+ 
   .submit-btn {
     width: 100%;
     margin-top: 1rem;
@@ -267,11 +267,11 @@
     transition: background 0.2s, transform 0.1s;
     position: relative;
   }
-
+ 
   .submit-btn:hover { background: #3C3489; }
   .submit-btn:active { transform: scale(0.99); }
   .submit-btn:disabled { opacity: 0.5; cursor: not-allowed; }
-
+ 
   .spinner {
     display: none;
     width: 16px;
@@ -282,16 +282,16 @@
     animation: spin 0.7s linear infinite;
     margin: 0 auto;
   }
-
+ 
   @keyframes spin { to { transform: rotate(360deg); } }
-
+ 
   .success-screen {
     display: none;
     text-align: center;
     padding: 3rem 1rem;
     animation: fadeUp 0.5s ease both;
   }
-
+ 
   .success-ornament {
     width: 56px;
     height: 56px;
@@ -303,20 +303,20 @@
     margin: 0 auto 1.5rem;
     font-size: 1.4rem;
   }
-
+ 
   .success-screen h2 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 2rem;
     font-weight: 300;
     margin-bottom: 0.5rem;
   }
-
+ 
   .success-screen p {
     font-size: 0.9rem;
     color: var(--ink-muted);
     line-height: 1.6;
   }
-
+ 
   .error-msg {
     display: none;
     background: #FEF2F2;
@@ -327,7 +327,7 @@
     color: #B91C1C;
     margin-top: 10px;
   }
-
+ 
   @media (max-width: 480px) {
     body { padding: 2rem 1rem 3rem; }
     .card { padding: 1.5rem 1.25rem; }
@@ -338,7 +338,7 @@
 </head>
 <body>
 <div class="container">
-
+ 
   <div class="header">
     <div class="ornament">
       <div class="ornament-line"></div>
@@ -348,7 +348,7 @@
     <h1>Reunión Familiar</h1>
     <p>Confirma tu asistencia</p>
   </div>
-
+ 
   <div class="card">
     <div id="formContent">
       <div class="form-section">
@@ -372,17 +372,17 @@
           <input type="tel" id="telefono" placeholder="+34 600 000 000" autocomplete="tel" />
         </div>
       </div>
-
+ 
       <div class="divider"></div>
-
+ 
       <div class="form-section">
         <div class="section-label">Acompañantes</div>
         <div class="acomp-list" id="acompList"></div>
         <button class="add-btn" onclick="addAcomp()" type="button">+ Añadir acompañante</button>
       </div>
-
+ 
       <div class="divider"></div>
-
+ 
       <div class="form-section" style="margin-bottom:0;">
         <div class="section-label">Información adicional</div>
         <div class="field">
@@ -402,29 +402,28 @@
           <textarea id="comentarios" placeholder="Cualquier cosa que quieras añadir..."></textarea>
         </div>
       </div>
-
+ 
       <button class="submit-btn" id="submitBtn" onclick="enviar()" type="button">
         <span id="btnText">Confirmar asistencia</span>
         <div class="spinner" id="spinner"></div>
       </button>
       <div class="error-msg" id="errorMsg">Algo ha ido mal. Por favor, inténtalo de nuevo.</div>
     </div>
-
+ 
     <div class="success-screen" id="successScreen">
       <div class="success-ornament">✓</div>
       <h2>¡Nos vemos pronto!</h2>
       <p>Hemos recibido tu confirmación.<br>¡Te esperamos en la reunión familiar!</p>
     </div>
   </div>
-
+ 
 </div>
-
+ 
 <script>
-  // ⚠️ REEMPLAZA ESTA URL con la de tu Apps Script desplegado
-  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzGjM168E37ZgjWo3lH5ifoM9WwOkvsdqylnPOFi_F9mv6RqVwaVyc8xFygucT9dtGc/exec';
-
+  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwHMcC-x7z29xEcCF4WKUpn1NnxRQilgyd_sWDbxiWMS91G3edYKUlXVq-3IMRcpmS4/exec';
+ 
   let acompCount = 0;
-
+ 
   function addAcomp() {
     const list = document.getElementById('acompList');
     acompCount++;
@@ -439,12 +438,12 @@
     `;
     list.appendChild(row);
   }
-
+ 
   function removeAcomp(n) {
     const row = document.getElementById(`acomp-row-${n}`);
     if (row) row.remove();
   }
-
+ 
   function getAcompanantes() {
     const names = [];
     document.querySelectorAll('.acomp-row input').forEach(input => {
@@ -453,12 +452,12 @@
     });
     return names.join(', ');
   }
-
+ 
   async function enviar() {
     const nombre = document.getElementById('nombre').value.trim();
     const apellidos = document.getElementById('apellidos').value.trim();
     const email = document.getElementById('email').value.trim();
-
+ 
     if (!nombre || !apellidos || !email) {
       showError('Por favor rellena los campos obligatorios (nombre, apellidos y email).');
       return;
@@ -467,10 +466,10 @@
       showError('Por favor introduce un email válido.');
       return;
     }
-
+ 
     setLoading(true);
     hideError();
-
+ 
     const payload = {
       nombre,
       apellidos,
@@ -480,13 +479,12 @@
       restricciones: document.getElementById('restricciones').value,
       comentarios: document.getElementById('comentarios').value.trim()
     };
-
+ 
     try {
-      await fetch(APPS_SCRIPT_URL, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
+      const params = new URLSearchParams(payload);
+      await fetch(APPS_SCRIPT_URL + '?' + params.toString(), {
+        method: 'GET',
+        mode: 'no-cors'
       });
       showSuccess();
     } catch (err) {
@@ -494,7 +492,7 @@
       showError('No se ha podido enviar. Comprueba tu conexión e inténtalo de nuevo.');
     }
   }
-
+ 
   function setLoading(loading) {
     const btn = document.getElementById('submitBtn');
     const text = document.getElementById('btnText');
@@ -503,21 +501,22 @@
     text.style.display = loading ? 'none' : 'inline';
     spinner.style.display = loading ? 'block' : 'none';
   }
-
+ 
   function showSuccess() {
     document.getElementById('formContent').style.display = 'none';
     document.getElementById('successScreen').style.display = 'block';
   }
-
+ 
   function showError(msg) {
     const el = document.getElementById('errorMsg');
     el.textContent = msg;
     el.style.display = 'block';
   }
-
+ 
   function hideError() {
     document.getElementById('errorMsg').style.display = 'none';
   }
 </script>
 </body>
 </html>
+ 
